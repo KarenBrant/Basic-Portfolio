@@ -1,0 +1,238 @@
+/* Resets */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+/* Custom Styles */
+#screen_width {
+    background-image: url(assets/images/hypnotize.png);
+    border: 1px solid;
+    border-color: #777777;
+    padding: 40px;
+}
+
+#main_body {
+    width: 960px;
+}
+
+#header {
+    font-family: 'Georgia', Times, 'Times New Roman', serif; 
+    border-bottom: 2px solid;
+    border-bottom-color: #b9b4b4;
+    height: 80px;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    width: 250px;
+    padding: 21px;
+}
+     
+#files {
+    position: absolute;
+    top: 70px;
+    left: 742px;
+    text-align: center;
+}
+
+#link1 {
+    margin-right: 5px;
+    padding: 5px;
+    border-right: 1px dashed;
+    border-right-color: #b9b4b4;
+}
+
+#link2 {
+    margin-right: 5px;
+    padding: 5px;
+    border-right: 1px dashed;
+    border-right-color: #b9b4b4;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 650px;
+    clear: both;
+    border: 1px solid;
+    border-color: #c9c5c5;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif; 
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    border-bottom-color: #b9b4b4;
+}
+
+#Kpic {
+    float: left;
+    width: 200px;
+    height: 170px;
+    padding: 5px 20px 5px 20px;
+}
+
+p {
+    color: #777777;
+    font-size: 18px;
+    line-height: 28px; 
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.connections {
+    position: absolute;
+    top: 140px;
+    left: 720px;
+    width: 270px;
+    border: 1px solid;
+    border-color: #c9c5c5;
+    text-align: center;
+    padding: 15px;
+}
+h3 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    border-bottom: 5px solid;
+    border-bottom-color: #777777;
+    padding: 10px;
+}
+
+#links {
+    clear: both;
+}
+
+#Linked_in {
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding-right: 5px;
+}
+
+#Github {
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding-right: 5px;
+}
+
+#Overflow {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding-top: 3px;
+}
+
+footer {
+    clear: both;
+    border-top: 10px solid;
+    border-top-color: #4aaaa5;
+    background: #777777;
+    height: 80px;
+    color: white;
+    text-align: center;
+}
+
+.container-p {
+    background-color: #ffffff;
+    width: 650px;
+    border: 1px solid;
+    border-color: #c9c5c5;
+    margin-bottom: 20px;
+    padding: 50px;
+    margin-top: 20px;
+}
+#hangman {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    position: relative;
+    margin: 20px;
+}
+
+#hangman img {
+    width: 100%;
+}
+
+.left {
+    position: absolute;
+    bottom: 2px;
+    padding: 10px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 20px;
+    width: 230px;
+}
+
+#rpg {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    margin: 10px;
+    right: 400px;
+    top: 240px;
+    margin: 20px;
+}
+
+#rpg img {
+    width: 100%;
+}
+
+#trivia {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    position: relative;
+    margin: 20px;
+}
+
+#trivia img {
+    width: 100%;
+}
+
+#rutgers {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    margin: 10px;
+    right: 400px;
+    top: 490px;
+    margin: 20px;
+}
+
+#rutgers img {
+    width: 100%;
+}
+
+#rock {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    position: relative;
+    margin: 20px;
+}
+
+#rock img {
+    width: 100%;
+}
