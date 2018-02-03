@@ -9,50 +9,56 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Set up whole screen for background and padding -->
     <div id="screen_width">
-    <div id="header">
-        <h1>Karen Brant</h1>
-        <nav>
-            <div id="files">
-                <a id="link1" href="index.html">About</a>
-                <a id="link2" href="portfolio.html">Portfolio</a>
-                <a id="link3" href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </div>
+        <!-- Header is next so it will go across the page -->
+        <div id="header">
+            <h1>Karen Brant</h1>
+            <nav>
+                <div id="files">
+                    <a id="link1" href="index.html">About</a>
+                    <a id="link2" href="portfolio.html">Portfolio</a>
+                    <a id="link3" href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Main body includes the form and the connection icons -->
         <div id="main_body">
             <div class="container">
                 <h2>Contact</h2>
-                <form action="/action_page.php">
-                    Name:<br>
-                    <input type="text" name="name" value="John Smith">
-                    <br>
-                    Email:<br>
-                    <input type="text" name="email" value="example@gmail.com">
-                    <br>
-                    Message:<br>
-                    <input type="text" name="message">
-                    <br><br>
-                    <input type="submit" value="Submit">
-                  </form> 
-            </div>
-            <div class="connections">
-                <header3>
-                    <h3>Connect with me</h3>
-                </header3>    
+                <div id="form_container"></div>
+                    <form id="id_form" action="/action_page.php">
+                        <label for="name">Name</label>
+                        <input type="text" class="contacts" name="flname" placeholder="John Smith">
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" class="contacts" name="emailadd" placeholder="example@gmail.com">
+                        <br>
+                        <label for="message">Message</label>
+                        <textarea id="id_text" name="msgarea"></textarea> 
+                        <br><br>
+                        <input id="id_input" type="submit" value="Submit">
+                    </form> 
+                </div>
+                <!-- Connection icons -->
+                <div class="connections">
+                    <header3>
+                        <h3>Connect with me</h3>
+                    </header3>    
                 <div id="links">
-                    <a id="Linked_in" href="www.linkedin.com/in/karen-brant-a702341">
+                    <a id="Linked_in" href="https://www.linkedin.com/in/karen-brant-a702341">
                         <img src="assets/images/linked.png" alt="Linked In logo"></a>
-                    <a id="Github" href="#">
+                    <a id="Github" href="https://github.com">
                         <img src="assets/images/github.png" alt="Github logo"></a>
-                    <a id="Overflow" href="#">
+                    <a id="Overflow" href="https://stackoverflow.com">
                         <img src="assets/images/stack.png" alt="Stack Overflow logo"></a>
                 </div>    
             </div>
         </div>
-    <footer>
-        Copyright 2018 Karen Brant
-    </footer> 
+        <!-- Footer is outside of main body so it will go across the page -->
+        <footer>
+            Copyright 2018 Karen Brant
+        </footer> 
     </div>
 </body>
 </html>

@@ -19,15 +19,17 @@ a {
 }
 
 /* Custom Styles */
+/* Goes with all 3 screens */
 #screen_width {
-    background-image: url(assets/images/hypnotize.png);
+    background-image: url("../images/hypnotize.png");
     border: 1px solid;
     border-color: #777777;
-    padding: 40px;
+    padding: 80px;
 }
 
 #main_body {
     width: 960px;
+    margin-left: 120px;
 }
 
 #header {
@@ -35,6 +37,9 @@ a {
     border-bottom: 2px solid;
     border-bottom-color: #b9b4b4;
     height: 80px;
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 120px;
 }
 
 h1 {
@@ -43,26 +48,28 @@ h1 {
     width: 250px;
     padding: 21px;
 }
-     
+
+/* Had trouble with positioning, so I used absolute */
 #files {
     position: absolute;
-    top: 70px;
-    left: 742px;
+    top: 110px;
+    left: 920px;
     text-align: center;
+
 }
 
 #link1 {
     margin-right: 5px;
     padding: 5px;
-    border-right: 1px dashed;
-    border-right-color: #b9b4b4;
+    border-right: 1px solid;
+    border-right-color: #e9e1e1;
 }
 
 #link2 {
     margin-right: 5px;
     padding: 5px;
-    border-right: 1px dashed;
-    border-right-color: #b9b4b4;
+    border-right: 1px solid;
+    border-right-color: #e9e1e1;
 }
 
 .container {
@@ -74,6 +81,7 @@ h1 {
     padding: 10px;
     margin-bottom: 40px;
     margin-top: 20px;
+    display:inline-block;
 }
 
 h2 {
@@ -82,8 +90,10 @@ h2 {
     padding-bottom: 20px;
     border-bottom: 2px solid;
     border-bottom-color: #b9b4b4;
+    
 }
 
+/* Unique to About screen */
 #Kpic {
     float: left;
     width: 200px;
@@ -100,25 +110,29 @@ p {
 }
 
 .connections {
-    position: absolute;
-    top: 140px;
-    left: 720px;
     width: 270px;
     border: 1px solid;
     border-color: #c9c5c5;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
+    float: right;
+    margin-top: 20px;
+    background-color: #ffffff;
 }
 h3 {
     color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-    border-bottom: 5px solid;
-    border-bottom-color: #777777;
+    border-bottom: 2px solid;
+    border-bottom-color: #b9b4b4;
     padding: 10px;
+    padding-bottom: 10px;
 }
 
+/* Goes with Connections - same for all screens */
 #links {
     clear: both;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 #Linked_in {
@@ -149,7 +163,10 @@ footer {
     background: #777777;
     height: 80px;
     color: white;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center 
 }
 
 .container-p {
@@ -160,13 +177,32 @@ footer {
     margin-bottom: 20px;
     padding: 50px;
     margin-top: 20px;
+    display: inline-block;
 }
+
+#pf_images {
+    display: grid;
+}
+
+.container-p h2 {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Used this to set up grid for columns for Portfolio - I struggled to get anything else to work */
+article {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(0,-50%);
+}
+
 #hangman {
     text-align: center;
-    width: 230px;
+    width: 250px;
     height: 230px;
-    position: relative;
     margin: 20px;
+    grid-column: 1;
 }
 
 #hangman img {
@@ -175,23 +211,19 @@ footer {
 
 .left {
     position: absolute;
-    bottom: 2px;
+    bottom: 4px;
     padding: 10px;
     background-color: #4aaaa5;
     color: white;
     font-size: 20px;
-    width: 230px;
+    width: 100%;
 }
 
 #rpg {
-    text-align: center;
-    width: 230px;
+    width: 250px;
     height: 230px;
-    position: absolute;
-    margin: 10px;
-    right: 400px;
-    top: 240px;
     margin: 20px;
+    grid-column: 2;
 }
 
 #rpg img {
@@ -199,11 +231,10 @@ footer {
 }
 
 #trivia {
-    text-align: center;
-    width: 230px;
+    width: 250px;
     height: 230px;
-    position: relative;
     margin: 20px;
+    grid-column: 1;
 }
 
 #trivia img {
@@ -211,14 +242,13 @@ footer {
 }
 
 #rutgers {
-    text-align: center;
-    width: 230px;
+    width: 250px;
     height: 230px;
-    position: absolute;
     margin: 10px;
     right: 400px;
     top: 490px;
     margin: 20px;
+    grid-column: 2;
 }
 
 #rutgers img {
@@ -226,13 +256,57 @@ footer {
 }
 
 #rock {
-    text-align: center;
-    width: 230px;
+    width: 250px;
     height: 230px;
-    position: relative;
     margin: 20px;
+    grid-column: 1;
 }
 
 #rock img {
     width: 100%;
+}
+
+/* Starts the Contact screen */
+#form_container {
+    padding-top: 10px;
+}
+label {
+    font-size: 18px;
+    color: #777777;
+    font-family: sans-serif;
+}
+.contacts {
+    font-size: 13px;
+    color: #b9b4b4;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #b9b4b4;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#id_text {
+    font-size: 13px;
+    color: #b9b4b4;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #b9b4b4;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 200px;  
+}
+
+#id_input { 
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
 }
